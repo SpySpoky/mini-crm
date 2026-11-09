@@ -21,9 +21,11 @@ Do these steps in order:
 1. Create a new project at [supabase.com](https://supabase.com).
 2. **Authentication → Sign In / Providers**: turn off **"Allow new users to sign up"**.
 3. **Authentication → Users → Add user** (check **Auto Confirm User**). Create 3 users:
-   - `manager@crm.test`
-   - `executor1@crm.test`
-   - `executor2@crm.test`
+   - `manager@gmail.com` (Иван Петров, manager)
+   - `user1@gmail.com` (Алексей Смирнов, executor)
+   - `user2@gmail.com` (Дмитрий Козлов, executor)
+
+   The emails must match the ones in `supabase/seed.sql`, because the seed finds users by email.
 4. **SQL Editor**: run the files below in this order:
    1. `supabase/migrations/20261108000000_init.sql` creates the schema, triggers, the status function and RLS.
    2. `supabase/seed.sql` creates profiles for the 3 users and demo data.
