@@ -43,7 +43,11 @@ Other commands: `npm run build`, `npm run lint`, `npm run preview`.
 
 ## Deploy
 
-TBD. `vercel.json` already contains the SPA rewrite, so all routes go to `index.html`.
+Live app: https://mini-crm-pi-eight.vercel.app
+
+Hosted on Vercel. Environment variables set in Vercel project settings:
+`VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY` (public key only).
+Test accounts are sent separately, not stored in the repository.
 
 ## Security model
 
