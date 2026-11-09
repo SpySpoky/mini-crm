@@ -6,6 +6,7 @@ export type AuthContextValue = {
     session: Session | null;
     profile: Profile | null;
     loading: boolean;
+    isManager: boolean; // true when profile.role is "manager"
     signIn: (email: string, password: string) => Promise<string | null>;
     signOut: () => Promise<void>;
 }
